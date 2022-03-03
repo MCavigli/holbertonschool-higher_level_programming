@@ -1,3 +1,3 @@
-#!/usr/bin/python3
-alf = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-print(alf)
+from alf import alph
+if __name__ == "__main__":
+    print(alph)
