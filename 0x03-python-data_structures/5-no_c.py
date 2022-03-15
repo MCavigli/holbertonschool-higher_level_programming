@@ -2,13 +2,8 @@
 
 
 def no_c(my_string):
-    idx = 0
-    new_list = []
-    new_string = ""
+    str = ""
     for i in my_string:
-        if i == 'c' or i == 'C':
-            continue
-        else:
-            new_list.append(i)
-    new_string = new_string.join(new_list)
-    return new_string
+        if i is not 'c' and i is not 'C':
+            str = str + i
+    return str
