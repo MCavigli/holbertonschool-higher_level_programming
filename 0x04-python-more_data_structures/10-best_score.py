@@ -4,6 +4,10 @@
 def best_score(a_dictionary):
     if not a_dictionary:
         return None
-    vals = list(a_dictionary.items())
-    vals.sort()
-    return vals[-1][0]
+    m = 0
+    best = ''
+    for k, v in a_dictionary.items():
+        if v > m:
+            m = v
+            best = k
+    return best
