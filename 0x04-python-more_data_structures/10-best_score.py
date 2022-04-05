@@ -2,9 +2,8 @@
 
 
 def best_score(a_dictionary):
-    if a_dictionary is None:
+    if not a_dictionary:
         return None
-    else:
-        vals = list(a_dictionary.items())
-        vals.sort()
-        return vals[-1][0]
+    vals = list(a_dictionary.items())
+    vals.sort()
+    return vals[-1][0]
